@@ -9,11 +9,14 @@
       "permissions": [
         "activeTab"
       ],
+      "icons": {
+        "48": "assets/12ft_48.png",
+        "96": "assets/12ft_96.png"
+      },
+      
       "browser_action": {
         "default_icon": "assets/12ft.png",
-        "default_title": "12ft.io",
+        "default_title": "unpaywall",
         "default_popup": "index.html"
       }
-    
-
 }
