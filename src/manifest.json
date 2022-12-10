@@ -1,20 +1,19 @@
 {
-    "manifest_version": 3,
-    "name": "12ft.io",
-    "version": "1",
-    "icons": {
-        "16": "./assets/12ft.png"
-    },
-    "content_scripts": [
-        {
-            "matches" : ["<all_urls>"],
-            "js": ["main.js"]
-        }
-    ],
-   
-    "permissions": [
-        "tabs"
-    ]
+    "manifest_version": 2,
+    "name": "12ft.io extension",
+    "version": "1.0",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      },       
+      "permissions": [
+        "activeTab"
+      ],
+      "browser_action": {
+        "default_icon": "assets/12ft.png",
+        "default_title": "12ft.io",
+        "default_popup": "index.html"
+      }
     
-   
+
 }
