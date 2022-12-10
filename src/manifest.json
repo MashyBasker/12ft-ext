@@ -1,6 +1,6 @@
 {
     "manifest_version": 2,
-    "name": "12ft.io extension",
+    "name": "unpaywall",
     "version": "1.0",
     "background": {
         "scripts": ["background.js"],
