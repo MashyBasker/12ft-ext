@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "12ft.io",
+    "version": 1,
+    "icons": {
+        "16": "../assets/12ft.png"
+    },
+    "content_scripts": [
+        {
+            "matches" : ["<all_urls"],
+            "js": ["main.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+        "tabs"
+    ],
+    
+    "default_locale": "en"
+}
