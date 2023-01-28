@@ -1,22 +1,22 @@
 {
-    "manifest_version": 3,
-    "name": "12ft.io",
-    "version": 1,
-    "icons": {
-        "16": "../assets/12ft.png"
-    },
-    "content_scripts": [
-        {
-            "matches" : ["<all_urls"],
-            "js": ["main.js"]
-        }
-    ],
+    "manifest_version": 2,
+    "name": "unpaywall",
+    "version": "1.0",
     "background": {
-        "scripts": ["background.js"]
-    },
-    "permissions": [
-        "tabs"
-    ],
-    
-    "default_locale": "en"
+        "scripts": ["background.js"],
+        "persistent": false
+      },       
+      "permissions": [
+        "activeTab"
+      ],
+      "icons": {
+        "48": "assets/12ft_48.png",
+        "96": "assets/12ft_96.png"
+      },
+      
+      "browser_action": {
+        "default_icon": "assets/12ft.png",
+        "default_title": "unpaywall",
+        "default_popup": "index.html"
+      }
 }
